@@ -6,7 +6,7 @@
 
 ## Демонстрация
 
-Ссылка на сайт: <a target="_blank" href="https://1jordanwalton1.github.io/LoftHouse/home.html">Тык</a>
+Ссылка на сайт: <a  href="https://1jordanwalton1.github.io/LoftHouse/home.html" target="_blank">Тык</a>
 
 ## Технологии
 
