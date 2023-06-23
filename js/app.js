@@ -164,9 +164,8 @@
             }));
         }
     }), 0);
-    var phoneInput = document.getElementById("tel-input");
-    phoneInput.addEventListener("input", (function(event) {
-        var value = event.target.value;
+    var phoneInputs = document.querySelectorAll(".form-watch__input-tel");
+    function formatPhone(value) {
         value = value.replace(/\D/g, "");
         if (value.charAt(0) !== "7") value = "7" + value;
         var formattedValue = "+7";
@@ -181,7 +180,14 @@
             }
         }
         value = formattedValue.slice(0, 18);
-        event.target.value = value;
+        return value;
+    }
+    phoneInputs.forEach((function(phoneInput) {
+        phoneInput.addEventListener("input", (function(event) {
+            var value = event.target.value;
+            value = formatPhone(value);
+            event.target.value = value;
+        }));
     }));
     window["FLS"] = true;
     isWebp();

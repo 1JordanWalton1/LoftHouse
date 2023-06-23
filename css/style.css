@@ -292,10 +292,8 @@ h6 {
   background-color: #242B33;
 }
 
-.no-webp .complex{
-  background: url("../img/Complex/bg.jpg") no-repeat center/cover; }
-
 .complex {
+  background: url("../img/Complex/bg.jpg") no-repeat center/cover;
   min-height: 100vh;
 }
 
@@ -506,8 +504,9 @@ h6 {
   top: 13%;
 }
 
-.no-webp .watch{
-  background: url("../img/Watch/bg.jpg") no-repeat center/cover; }
+.watch {
+  background: url("../img/Watch/bg.jpg") no-repeat center/cover;
+}
 
 .watch__inner {
   display: -webkit-box;
@@ -1915,7 +1914,3 @@ h6 {
             filter: saturate(1.5);
   }
 }
-
-.webp .complex{ background: url(../img/Complex/bg.webp) no-repeat center/cover; }
-
-.webp .watch{ background: url(../img/Watch/bg.webp) no-repeat center/cover; }
